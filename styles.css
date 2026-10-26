@@ -1,0 +1,163 @@
+:root {
+  --navy: #102a43;
+  --teal: #1f9d8a;
+  --orange: #ff7f50;
+  --cream: #f7f3ec;
+  --ink: #1f2937;
+  --white: #ffffff;
+  --shadow: rgba(16, 42, 67, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f8f1df 0%, #efeae0 100%);
+  color: var(--ink);
+}
+
+header {
+  background: var(--navy);
+  border-bottom: 4px solid var(--orange);
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 127, 80, 0.2);
+}
+
+main {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 0 1.25rem 2rem;
+}
+
+.hero {
+  background: var(--white);
+  border: 3px solid var(--orange);
+  border-radius: 18px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--teal);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  color: var(--navy);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.button {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--white);
+  padding: 0.85rem 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+#about,
+#contact {
+  background: #f7fafc;
+  border-left: 6px solid var(--teal);
+  padding: 1.8rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0 14px 14px 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--navy);
+  font-size: 2rem;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 0;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--navy);
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 2;
+}
+
+.accent {
+  background: linear-gradient(180deg, rgba(31, 157, 138, 0.08), rgba(255, 127, 80, 0.12));
+  border-color: var(--orange);
+}
+
+#contact p {
+  margin-bottom: 0;
+}
